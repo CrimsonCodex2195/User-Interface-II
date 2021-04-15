@@ -1,1 +1,61 @@
+html {
+  font-size: 62.5%;
+}
+
 /* Add CSS styling here */
+.container {
+  width: 100%;
+}
+/* Css for Header */
+header {
+  background-color: #1b1a17;
+  height: 100px;
+}
+header h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #f0e3ca;
+  display: block;
+  padding: 5px;
+}
+header nav {
+  margin: 20px;
+}
+header a {
+  color: #a35709;
+  padding: 5px;
+  font-size: 2.2rem;
+  margin-top: 10px;
+}
+/*                   */
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sub-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex: 25%;
+}
+
+/* Footer */
+footer {
+  height: 150px;
+  background-color: #1b1a17;
+  text-align: center;
+}
+footer h3 {
+  padding: 20px;
+  color: #f0e3ca;
+  font-size: 3rem;
+}
+footer button {
+  padding: 15px 60px;
+  font-size: 2rem;
+  background-color: #a35709;
+  color: #f0e3ca;
+}
+/*       */
