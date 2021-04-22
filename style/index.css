@@ -1,1 +1,143 @@
 /* Add CSS styling here */
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(238, 235, 235);
+}
+
+header {
+  background-color: #1b1a17;
+  height: 150px;
+}
+
+header h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #f0e3ca;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header nav a {
+  font-size: 3em;
+  color: #acc0e2;
+  padding: 1%;
+  /* background-color: #f5cebe; */
+  /* border-radius: 20px; */
+  text-decoration: none;
+}
+
+.top-content {
+  display: flex;
+  /* justify-content: space-evenly; */
+  padding: 0.75% 10%;
+}
+
+.top-content img {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+}
+
+.top-content-information {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top-content-information h2 {
+  font-size: 4rem;
+}
+
+.top-content-information button {
+  font-size: 3rem;
+  color: #f0e3ca;
+  padding: 1.2%;
+  background-color: #a35709;
+  border-radius: 20px;
+  height: auto;
+  width: 70%;
+}
+
+.top-content-information p {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin: 2%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  /* width: 100%;
+  height: auto; */
+}
+
+.project img {
+  height: auto;
+  width: 100%;
+}
+
+.project p {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+footer {
+  background-color: #1b1a17;
+  text-align: center;
+}
+footer h3 {
+  padding: 2%;
+  color: #f0e3ca;
+  font-size: 3rem;
+}
+footer button {
+  padding: 1% 5%;
+  margin-bottom: 1%;
+  font-size: 2rem;
+  background-color: #a35709;
+  color: #f0e3ca;
+  border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+  .top-content img {
+    width: 50%;
+  }
+  .top-content-information p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-content {
+    flex-direction: column;
+  }
+
+  .top-content-information > * {
+    margin: 10px;
+  }
+
+  .top-content img {
+    margin: 0 auto;
+  }
+}
