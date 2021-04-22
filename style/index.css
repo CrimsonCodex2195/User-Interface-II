@@ -39,11 +39,18 @@ header nav a {
 
 .top-content {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   padding: 0.75% 10%;
 }
 
+.top-content img {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+}
+
 .top-content-information {
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -60,16 +67,19 @@ header nav a {
   padding: 1.2%;
   background-color: #a35709;
   border-radius: 20px;
+  height: auto;
+  width: 70%;
 }
 
 .top-content-information p {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .project-grid {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .project {
@@ -77,11 +87,13 @@ header nav a {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  /* width: 100%;
+  height: auto; */
 }
 
 .project img {
-  height: 300px;
-  width: 400px;
+  height: auto;
+  width: 100%;
 }
 
 .project p {
@@ -105,4 +117,27 @@ footer button {
   background-color: #a35709;
   color: #f0e3ca;
   border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+  .top-content img {
+    width: 50%;
+  }
+  .top-content-information p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-content {
+    flex-direction: column;
+  }
+
+  .top-content-information > * {
+    margin: 10px;
+  }
+
+  .top-content img {
+    margin: 0 auto;
+  }
 }
